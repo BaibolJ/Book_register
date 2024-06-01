@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Book_registr</h2>
+<form method="POST">
+        {% csrf_token %}
+        <label for="id_title">Title:</label><br>
+        <input type="text" id="id_title" name="title" ><br>
+        <label for="id_author">Author:</label><br>
+        <input type="text" id="id_author" name="author" ><br>
+        <label for="id_date"> Date:</label><br>
+        <input type="date" id="id_date" name="date" ><br><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
